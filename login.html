@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+  <link rel="icon" type="image/png" href="cup.png">
+  <title>DFS Coffee</title>
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-sm bg-secondary navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand">
+    <img src="cup.png" alt="logo" style="width:50px;">
+  </a>
+  <div= class="container">
+  <!-- Links -->
+  <div class="margin">
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html"><b>Home</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about.html"><b>About</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="daffa.html"><b>Contact</b></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="login.html"><b>Login</b></a>
+    </li>
+  </ul>
+</div>
+</div>
+</nav>
+<hr>
+<div class="jumbotron jumbotron-fluid alert-secondary">
+    <div class="container text-center">
+        <h class="display-4"><i class="fa fa-fonticons" aria-hidden="true">Log In</i></h>
+    </div>
+  </div>
+      <div class="container">
+        <h2>Form To Enter DFS Coffee</h2>
+        <div class="alert alert-danger" role="alert">
+          <p>if you don't have member and want to join DFS Coffee. You must Text and Phone the Developer for register the membership!</p>
+          </div>
+        <form class="form-horizontal" method="POST">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">          
+              <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+            </div>
+          </div>
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <button onclick="myFunction()" type="submit" class="btn btn-success">Submit</button>
+              <p id="demo1"></p>
+              <script>
+              function myFunction() {
+                var txt;
+                if (confirm("Press a button!")) {
+                  txt = "You pressed OK!";
+                } else {
+                  txt = "You pressed Cancel!";
+                }
+                document.getElementById("demo1").innerHTML = txt;
+              }
+              </script>
+              </script>
+            </div>
+          </div>
+        </form>
+      </div>
+    <br>
+      <footer>
+      <div class="card-footer alert-secondary text-center">
+            <p id="demo"></p>
+            <script>
+            var d = new Date();
+            document.getElementById("demo").innerHTML = d;
+            </script>
+      <p>&copyCopyRight by Daffa, 2018</p>
+      </div>
+      </div>
+      </footer>
+      </body>
+      </html>
